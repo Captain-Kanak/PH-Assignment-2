@@ -8,6 +8,7 @@
 :root {
   --pure: #ffffff;
   --dark: #111111;
+  --ternary: #666666;
   --orange: #fea301;
   --sky-blue: #01acfd;
   --light-blue: #05d4df;
@@ -67,13 +68,7 @@
 }
 .navbar-btn {
   background-color: var(--orange);
-  color: var(--pure);
-  font-size: 1.4rem;
   font-weight: 600;
-  line-height: 2rem;
-  border: none;
-  border-radius: 12px;
-  padding: 1rem 4rem;
 }
 #hamburger-btn {
   font-size: 2rem;
@@ -102,16 +97,6 @@
   font-size: 1.4rem;
   color: var(--dark);
   margin: 1.5rem 0;
-}
-.hero-btn {
-  background-color: var(--dark);
-  color: var(--pure);
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 2rem;
-  padding: 1rem 3rem;
-  border: none;
-  border-radius: 12px;
 }
 .hero-img {
   width: 100%;
@@ -157,6 +142,7 @@
   font-weight: 500;
   line-height: 2rem;
   margin-bottom: 2rem;
+  color: var(--ternary);
 }
 .curriculum-card-btn {
   text-decoration: none;
@@ -171,8 +157,99 @@
 .curriculum-btn-3 {
   color: var(--electric-purple);
 }
+.pagination-btn {
+  margin-top: 5rem;
+}
+.pagination-btn a {
+  color: var(--pure);
+  background-color: var(--orange);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 1rem 1.4rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
 
-/* header styles */
+/* stories styles */
+#stories {
+  margin-top: 8rem;
+  background-image: url("../assets/bg.png");
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.stories-card-wrapper {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.stories-card {
+  border-radius: 16px;
+  background-color: var(--pure);
+}
+.stories-card img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.story-1 {
+  grid-row: span 2;
+}
+.story-1-tittle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--dark);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.story-1-description {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--ternary);
+}
+.stories-card-img {
+  position: relative;
+}
+.stories-card-date {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--pure);
+  background-color: var(--light-blue);
+  padding: 0.8rem 1.5rem;
+  border-radius: 48px;
+  position: absolute;
+  left: 2rem;
+  bottom: -1.5rem;
+}
+.date-2 {
+  background-color: var(--yellow-green);
+}
+.date-3 {
+  background-color: var(--electric-purple);
+}
+.date-4 {
+  background-color: var(--orange);
+}
+.date-5 {
+  background-color: var(--sky-blue);
+}
+.stories-card-content {
+  padding: 2rem;
+  text-align: start;
+}
+.stories-card-tittle {
+  font-style: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--dark);
+  margin-top: 1rem;
+}
+
 /* header styles */
 /* header styles */
 /* header styles */
@@ -190,6 +267,10 @@ footer {
   /* utilities css*/
   .section-tittle {
     font-size: 1.5rem;
+  }
+  .btn-primary {
+    font-size: 1rem;
+    padding: 8px 32px;
   }
   /* media for navbar */
   #navbar {
@@ -226,10 +307,6 @@ footer {
   .hero-description {
     font-size: 1rem;
   }
-  .hero-btn {
-    font-size: 1rem;
-    padding: 8px 24px;
-  }
 
   /* media for curriculum */
   .curriculum-card-wrapper {
@@ -237,7 +314,31 @@ footer {
     padding: 0 1rem;
     margin-top: 1rem;
   }
-  /* media for navbar */
+  .pagination-btn {
+    display: none;
+  }
+
+  /* media for stories */
+  .stories-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+  }
+  .story-1 {
+    display: none;
+  }
+  .stories-card-date {
+    font-size: 10px;
+    padding: 5px 10px;
+    bottom: -1rem;
+  }
+  .stories-card-content {
+    padding: 1rem;
+  }
+  .stories-card-tittle {
+    font-size: 10px;
+    font-weight: 800;
+  }
+
   /* media for navbar */
   /* media for navbar */
 }
