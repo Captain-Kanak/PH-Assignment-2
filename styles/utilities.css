@@ -1,0 +1,20 @@
+/**/
+.max-width {
+  max-width: 1159px;
+  margin: 0 auto;
+}
+.display-flex {
+  display: flex;
+}
+.section-tittle {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--dark);
+}
+.text-orange {
+  color: var(--orange);
+}
+.text-blue {
+  color: var(--sky-blue);
+}

@@ -1,7 +1,243 @@
 /* Import Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Import Another CSS File */
+@import url("./utilities.css");
+
+/* Color Picking */
+:root {
+  --pure: #ffffff;
+  --dark: #111111;
+  --orange: #fea301;
+  --sky-blue: #01acfd;
+  --light-blue: #05d4df;
+  --electric-purple: #8700ff;
+  --yellow-green: #95b226;
+}
 
 /* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* Google Fonts Styles */
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* header styles */
+/* navbar styles */
+#navbar {
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.left {
+  align-items: center;
+  gap: 1rem;
+}
+#logo-name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--dark);
+}
+.nav-links {
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--orange);
+}
+.nav-links li:nth-child(2) .nav-link {
+  color: var(--sky-blue);
+}
+.nav-links li:nth-child(3) .nav-link {
+  color: var(--light-blue);
+}
+.nav-links li:nth-child(4) .nav-link {
+  color: var(--electric-purple);
+}
+.navbar-btn {
+  background-color: var(--orange);
+  color: var(--pure);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2rem;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 4rem;
+}
+#hamburger-btn {
+  font-size: 2rem;
+  color: var(--dark);
+  display: none;
+}
+
+/* hero styles */
+#hero {
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-content {
+  padding-right: 2rem;
+}
+.hero-tittle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: var(--dark);
+}
+.hero-tittle span {
+  font-weight: 700;
+}
+.hero-description {
+  font-size: 1.4rem;
+  color: var(--dark);
+  margin: 1.5rem 0;
+}
+.hero-btn {
+  background-color: var(--dark);
+  color: var(--pure);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 12px;
+}
+.hero-img {
+  width: 100%;
+}
+
+/* main styles */
+/* curriculum styles */
+#curriculum {
+  background-image: url("../assets/bg.png");
+  margin-top: 4rem;
+  text-align: center;
+}
+.curriculum-card-wrapper {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.curriculum-card {
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+}
+.card-1 {
+  background: linear-gradient(#def5ff, #ffffff);
+}
+.card-2 {
+  background: linear-gradient(#fff4dc, #ffffff);
+}
+.card-3 {
+  background: linear-gradient(#f2e8ff, #ffffff);
+}
+.curriculum-card-tittle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--dark);
+  margin: 2rem 0;
+}
+.curriculum-card-description {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.curriculum-card-btn {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--sky-blue);
+}
+.curriculum-btn-2 {
+  color: var(--orange);
+}
+.curriculum-btn-3 {
+  color: var(--electric-purple);
+}
+
+/* header styles */
+/* header styles */
+/* header styles */
+/* header styles */
+/* header styles */
+/* header styles */
+/* header styles */
+
+/* footer styles */
+footer {
+  height: 600px;
+}
+
+/* Responsive Media Query For Small Device */
+@media screen and (max-width: 576px) {
+  /* utilities css*/
+  .section-tittle {
+    font-size: 1.5rem;
+  }
+  /* media for navbar */
+  #navbar {
+    padding: 1rem;
+    border-bottom: 2px solid var(--orange);
+  }
+  #logo-name {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  .navbar-btn {
+    display: none;
+  }
+  #hamburger-btn {
+    display: block;
+  }
+
+  /* media for hero */
+  #hero {
+    margin-top: 1rem;
+    flex-direction: column-reverse;
+    padding: 0 1rem;
+  }
+  .hero-content {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .hero-tittle {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+  .hero-btn {
+    font-size: 1rem;
+    padding: 8px 24px;
+  }
+
+  /* media for curriculum */
+  .curriculum-card-wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+  /* media for navbar */
+  /* media for navbar */
+  /* media for navbar */
+}
