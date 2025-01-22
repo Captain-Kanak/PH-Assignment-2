@@ -21,6 +21,7 @@
   border: none;
   border-radius: 12px;
   padding: 1rem 4rem;
+  cursor: pointer;
 }
 .text-orange {
   color: var(--orange);
