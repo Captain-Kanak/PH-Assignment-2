@@ -34,6 +34,16 @@ marquee {
   font-weight: 700;
   color: var(--sky-blue);
 }
+marquee span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+marquee .one {
+  color: var(--orange);
+}
+marquee .two {
+  color: var(--electric-purple);
+}
 
 /* header styles */
 /* navbar styles */
